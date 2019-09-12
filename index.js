@@ -173,6 +173,7 @@ ReactDOM.render(
 );
 */
 
+/*
 //defaultProps
 class PropExample extends React.Component{
     render(){
@@ -208,28 +209,70 @@ ReactDOM.render(
     document.getElementById("root")
 );
 
+*/
+/*
+//PropTypes
+class ComponentExample extends React.Component{
+    render(){
+        return (
+            <div>
+                <h1>{this.props.arrayProp}</h1>
+                <h1> {this.props.strProp} </h1>
+                <h1> {this.props.numProp} </h1>
+            </div>
+        );
+    }
+
+}
+
+ComponentExample.propTypes = {
+    arrayProp: PropTypes.array,
+    numProp: PropTypes.number,
+    strProp: PropTypes.string
+}
+
+ComponentExample.defaultProps = {
+    arrayProp : ['Devi', 'Kali', "Tara"],
+    numProp: '108',
+    strProp: 'Mahakali'
+}
+
+ReactDOM.render(
+    <ComponentExample />,
+    document.getElementById('root')
+)
+*/
+/*
+//Lists
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const updateNums = numbers.map(
+    (number)=>{
+        return <li>{number}</li>
+    }
+);
+*/
+const numbers = [1, 2, 3, 4, 5, 6, 7];
 
 
+function ListMenu(props){    
+    const updateNums = numbers.map(
+        (number) =>{
+            return <li key={number.toString()}>{number} </li>
+        }
+    );
 
+    return(
+        <>
+        <ol>{updateNums}</ol>
+        <ul>{updateNums}</ul>
+        </>
+    )
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ReactDOM.render(
+    <ListMenu numList = {numbers} />,
+    document.getElementById('root'),
+    console.log('It is Done successfully ok.. ')
+);
 
