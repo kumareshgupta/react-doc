@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 //var name= "Explorer";
 //var num = 1;
 // var element = <h1>{name}.React is rising!</h1>
@@ -81,7 +82,7 @@ ReactDOM.render(
         </div> 
     );
 }*/
-
+/*
 function Input(){
     return(
     <div> 
@@ -114,18 +115,98 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
+*/
+
+/*function FunComponent(props){
+    return(
+        <div>
+            <h2>Pranam! {props.user} </h2>
+        </div>
+    );
+}
+
+class DemoComponent extends React.Component{
+    render(){
+        return(
+            <div>
+                <h2>Namaste! {this.props.user}</h2>
+                <h3>Life is 10% what happens to you and 90% how you react to it.</h3>
+                <FunComponent />
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <DemoComponent user="Kumaresh Gupta" />,    
+    document.getElementById('root')
+);
+*/
+//props 
+/*
+class Parent extends React.Component{
+    render(){
+        return (
+            <div>
+                <h2>Wow!</h2>
+                <Child name="Ram" location="Bangalore"></Child>
+            </div>
+        );
+    }
+
+}
+
+class Child extends React.Component{
+    render(){
+        return(
+            <div>
+                <h2>{this.props.name}</h2>
+                <h2>{this.props.location}</h2>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <Parent/>,
+    document.getElementById("root")
+);
+*/
+
+//defaultProps
+class PropExample extends React.Component{
+    render(){
+        return (
+            <div>
+            <h1>{this.props.title}</h1>
+            <h2>{this.props.email}</h2>
+            <h2>{this.props.names[0]}</h2>
+            <h2>{this.props.names}</h2>
+            <h3>
+                {this.props.names.map(
+                    function namesIterator(name, i){
+                        return(
+                            "Developer : " + (i+1) + " - " + name + "\n"
+                        );
+                    }
+                )}
+            </h3>
+            </div>
+        );
+    }
+}
 
 
+PropExample.defaultProps = {
+    title: "React Rocks",
+    email: "act@react.com",
+    names: ['Ram','Shyam','Matangi']
+}
 
-
-
-
-
-
-
-
-
-
+ReactDOM.render(
+    <PropExample />,
+    document.getElementById("root")
+);
 
 
 
