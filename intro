@@ -1,0 +1,8 @@
+React -
+  a declarative, 
+  efficient, and 
+  flexible JavaScript library for building user interfaces.
+  
+   In React we mainly have two types of components
+    1. functional
+    2. class
