@@ -252,6 +252,7 @@ const updateNums = numbers.map(
     }
 );
 */
+/*
 const numbers = [1, 2, 3, 4, 5, 6, 7];
 
 
@@ -274,5 +275,29 @@ ReactDOM.render(
     <ListMenu numList = {numbers} />,
     document.getElementById('root'),
     console.log('It is Done successfully ok.. ')
+);
+*/
+
+class FakeComponent extends React.Component{
+    state = {
+        name : 'Kumaresh'
+    }
+    render(){
+        return(
+            <>
+            <h1>{this.state.name}</h1>
+            <h2>{FakeFun()}</h2>
+            </>
+        );
+    }
+}
+
+const FakeFun = () =>{
+    let name = 'Ram';
+    console.log('Hi {name}');
+}
+ReactDOM.render(
+    <FakeComponent />,
+    document.getElementById('root')
 );
 
