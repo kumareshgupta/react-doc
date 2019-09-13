@@ -44,6 +44,7 @@ generate uniqe key by using npm package
 ============================================================================
 
 Styling React Components
+=========================
 1. CSS Stylesheets
 2. Inline styling
 3. CSS Modules
@@ -52,3 +53,11 @@ Styling React Components
 ============================================================================
 
 
+Lifecyle Methods
+=========================
+1. Mounting - When an instance of a component is being created and inserted into the DOM
+2. Updating - When a component is being re-rendered as a result of chnages to either its props or state
+3. Unmounting - When a component is being removed from the DOM
+4. Error Handling - When there is an error during rendering, in a lifecycle method, or in the constructor of any child component
+
+=============================================================================
