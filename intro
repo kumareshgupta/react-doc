@@ -23,3 +23,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+===========================================================================
+
+Event Handling in React
+1. binding in render method
+2. use arrow function in render method
+3. binding the event handler in the constructor
+4. use arrow function as a class property
