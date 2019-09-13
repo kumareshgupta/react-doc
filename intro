@@ -30,3 +30,25 @@ Event Handling in React
 2. use arrow function in render method
 3. binding the event handler in the constructor
 4. use arrow function as a class property
+
+============================================================================
+
+When to us index as a key?
+1. The items in your list do not have a unique id.
+2. The list is static list and will not change.
+3. The list will never be reordered or filtered.
+
+
+generate uniqe key by using npm package
+
+============================================================================
+
+Styling React Components
+1. CSS Stylesheets
+2. Inline styling
+3. CSS Modules
+4. CSS in JS Libraries (Styled Components)
+
+============================================================================
+
+
