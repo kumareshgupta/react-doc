@@ -1,0 +1,21 @@
+//function
+let getValue = function(value=5, bonus=10){
+  console.log(value+bonus)
+}
+
+//function call
+getValue()
+getValue(20)
+getValue(30,20)
+getValue(undefined, 20)
+getValue(30,undefined)
+
+===============================================
+
+let percentVal = () => 0.1
+
+let getValue = function(value=5, bonus=value*percentVal()){
+  console.log(value + bonus)
+  console.log(arguments.length)
+  }
+
