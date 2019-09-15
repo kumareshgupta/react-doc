@@ -1,0 +1,14 @@
+.primary{
+    color: blue
+}
+
+.secondary{
+    color: white;
+    background : orange;
+    border: 1px solid blue;
+    margin-left: 4pc
+}
+
+.font-xl {
+    font-size: 72px
+}
