@@ -109,5 +109,21 @@ Functional :-
   Stateful/ Smart/ Container
   
 
+Lifecycle Methods :-
+constructor(props) - get called whenever a new component is created
+                     initializing state
+                     Binding the event handlers
+                     
+ static getDerivedStateFromProps(props, state) - When the state of the component depends on changes in props over time
+                                                 doesn't have this keyword
+
+render() - Only required method
+           Read props & state and return JSX
+           Do not change state or interact with DOM or make ajax calls
+           Children components  life cycle methods are also executed
+           
+componentDidMount() - Invoked immediately after a compoent and all its children components have been rendered to the DOM
+                      Causes side effects. Ex. Interact with the dOM or perform any ajaz calls to load data.
+
 
 
