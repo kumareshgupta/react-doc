@@ -110,12 +110,14 @@ Functional :-
   
 
 Lifecycle Methods :-
+=============================
 constructor(props) - get called whenever a new component is created
                      initializing state
                      Binding the event handlers
                      
  static getDerivedStateFromProps(props, state) - When the state of the component depends on changes in props over time
                                                  doesn't have this keyword
+                                                 Method is called everytime a component is re-rendered
 
 render() - Only required method
            Read props & state and return JSX
