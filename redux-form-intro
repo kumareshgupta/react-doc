@@ -1,9 +1,0 @@
-Actions are payloads of information that send data from application to store. They are the only source of information for the store.
-Command :- store.dispatch()
-
-
-formReducer
-reduxForm()
-<Field/>
-
-
