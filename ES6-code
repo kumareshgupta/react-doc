@@ -1,3 +1,15 @@
+var :- function scoped
+let :- block scoped
+
+It can be said that a variable declared with var is defined throughout the program as compared to let.
+
+Difference between == and === 
+
+The ‘==’ operator tests for abstract equality i.e. it does the necessary type conversions before doing the equality comparison.
+
+‘===’ operator tests for strict equality i.e it will not do the type conversion hence if the two values are not of the same type, when compared, it will return false.
+
+
 //function
 let getValue = function(value=5, bonus=10){
   console.log(value+bonus)
