@@ -6,6 +6,8 @@ React -
    In React we mainly have two types of components
     1. functional
     2. class
+  React creates a VIRTUAL DOM in memory.
+    Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
 
 Create-react-app
 ========================================================================================================================
@@ -126,6 +128,7 @@ render() - Only required method
            
 componentDidMount() - Invoked immediately after a compoent and all its children components have been rendered to the DOM
                       Causes side effects. Ex. Interact with the dOM or perform any ajaz calls to load data.
+                      
 
 
 
